@@ -1,0 +1,7 @@
+% Smooth Algorithm
+% 1. In each iteration, at first q_start is always set to the start point.
+% 2. Get the unit vector from the q_start to q_end
+% 3. check if it is free space between q_start and q_end (add delta*unit vector)
+% 4. If yes, directly set q_end to q_start, put the q_end into path_smooth and this iteration finishes
+% 5. If no, update q_start to the next element in the path list, start from
+% step 2 again
